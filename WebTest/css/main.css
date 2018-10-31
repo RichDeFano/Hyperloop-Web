@@ -1,0 +1,170 @@
+
+* {
+    box-sizing: border-box !important;
+}
+
+body {
+    font-family: Arial;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("iowaBGTemp.jpg");
+    background-size: cover;
+    width:100%;
+}
+
+/* Header/Blog Title */
+.header {
+    margin:0px;
+    padding: 0px;
+    text-align: center;
+    background-image: url("bgTest2.png");
+    top:40px;
+    left:0;
+    position: relative;
+    padding-bottom: -40px !important;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+    z-index: 999;
+    background-color: #000000;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #DFB426;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #DFB426;
+    color: #000000;;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.midcolumn {
+    float: left;
+    width: 75%;
+    background-image: url("bgTest2.png");
+    position: relative;
+    top: 40px;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 12.5%;
+    top: 40px;
+    padding-right: 20px;
+    outline-color: #000000;
+    outline-style: solid;
+    outline-width: medium;
+    z-index: 2;
+    position: relative;
+}
+
+.leftcolumn {
+    float: left;
+    width: 12.5%;
+    top: 40px;
+    position:relative;
+    padding-left: 20px;
+    outline-color: #000000;
+    outline-style: solid;
+    outline-width: medium;
+    z-index: 2;
+}
+
+/* Fake image */
+.fakeimg {
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background-image: url("bgTest2.png");
+    bottom:0;
+    left:0;
+    margin: 0;
+    top: 40px;
+    position: relative;
+}
+img{
+    margin: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: transparent !important;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    outline: none !important;
+    position: relative;
+}
+.sponsorTag{
+    align-content: center !important;
+    align-text: center !important;
+}
+
+.logoImg{
+    position: relative;
+    left:-35%;
+}
+
+
+.socialMediaLinks img{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    margin: 5px;
+
+}
+
+.leaderProfile{
+    align-content: center !important;
+    float: left;
+    width: 25%;
+}
+.leaderProfile img{
+    border-radius: 50%;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
