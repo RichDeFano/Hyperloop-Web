@@ -11,10 +11,6 @@ body {
     background-size: cover;
 }
 
-.header, .midcolumn, .footer{
-    background-image: url("bgTest2.png");
-}
-
 /* Header/Blog Title */
 .header {
     margin:0px;
@@ -136,11 +132,9 @@ img{
 
 /* Add a card effect for articles */
 .card {
-    background-color: transparent !important;
     color: white;
     padding: 20px;
     text-align: left;
-    outline: none !important;
     position: relative;
     font-size: 120%;
 }
@@ -190,3 +184,16 @@ img{
         width: 100%;
     }
 }
+
+.header, .midcolumn, .footer{
+    background-image: url("bgTest2.png");
+    background-repeat: repeat;
+    background-position: 0px 0px;
+}
+
+.card{
+    background-image: url("bgTest2.png");
+    background-repeat: repeat;
+    background-position: 12.5% 0%;
+}
+
