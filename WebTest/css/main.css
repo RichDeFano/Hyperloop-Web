@@ -9,10 +9,11 @@ body {
     padding: 0px;
     background-image: url("iowaBGTemp.jpg");
     background-size: cover;
-    width:100%;
-
 }
 
+.header, .midcolumn, .footer{
+    background-image: url("bgTest2.png");
+}
 
 /* Header/Blog Title */
 .header {
@@ -21,7 +22,7 @@ body {
     text-align: center;
     top:40px;
     left:0;
-    background-image: url("bgTest2.png");
+
     position: relative;
     padding-bottom: -40px !important;
 }
@@ -58,7 +59,8 @@ body {
 .midcolumn {
     float: left;
     width: 75%;
-    background-image: url("bgTest2.png");
+
+
     position: relative;
     top: 40px;
 }
@@ -121,7 +123,7 @@ body {
     padding: 20px;
     color: white;
     text-align: center;
-    background-image: url("bgTest2.png");
+
     bottom:0;
     left:0;
     margin: 0;
